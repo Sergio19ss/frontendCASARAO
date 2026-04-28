@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar chat</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - CASARÃO</title>
+  <link rel="stylesheet" href="styles/perfil.css">
 </head>
+
 <body>
-    
+
+<header>
+  <h1 class="logo">CASARÃO</h1>
+
+  <nav>
+    <ul>
+      <li><a href="main.html">Início</a></li>
+      <li><a href="anuncios.html">Anúncios</a></li>
+      <li><a href="conversas.html">Conversas</a></li>
+      <li><a href="login.html">Sair</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="perfil-page">
+
+  <section class="perfil-top">
+    <img src="imagens/avatar.png" class="avatar" alt="Foto de perfil">
+
+    <div class="perfil-info">
+      <h2>Talibooo</h2>
+      <p>
+        Membro há 1 ano
+        <span>Última atividade hoje</span>
+      </p>
+    </div>
+
+    <a href="settings.html" class="settings-btn">⚙ Editar Perfil</a>
+  </section>
+
+  <section class="tabs">
+    <a href="#" class="active">Anúncios</a>
+    <a href="#">Favoritos</a>
+    <a href="#">Seguidores</a>
+  </section>
+
+  <section class="perfil-actions">
+    <h3>0 Anúncios</h3>
+
+    <div class="search-sort">
+      <span>🔍</span>
+      <p>Ordenar por</p>
+
+      <select>
+        <option>Mais recentes</option>
+        <option>Mais antigos</option>
+        <option>Preço maior</option>
+        <option>Preço menor</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="empty-state">
+    <div class="empty-icon"></div>
+    <h3>Ainda não tens anúncios</h3>
+    <p>Publica o teu primeiro anúncio no CASARÃO.</p>
+
+    <a href="criar_anuncio.html" class="publish-btn">Criar Anúncio</a>
+  </section>
+
+</main>
+
 </body>
 </html>
