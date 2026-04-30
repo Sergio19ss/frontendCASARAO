@@ -10,8 +10,6 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* HEADER */
-
 header {
   width: 100%;
   padding: 20px 10%;
@@ -44,15 +42,12 @@ nav a:hover {
   color: #237702;
 }
 
-/* PAGE */
-
 .perfil-page {
   max-width: 1220px;
   margin: 0 auto;
   padding: 45px 30px;
 }
 
-/* TOP */
 
 .perfil-top {
   display: flex;
@@ -103,8 +98,6 @@ nav a:hover {
   color: white;
 }
 
-/* TABS */
-
 .tabs {
   margin-top: 55px;
   display: flex;
@@ -124,7 +117,6 @@ nav a:hover {
   border-bottom: 3px solid #237702;
 }
 
-/* ACTIONS */
 
 .perfil-actions {
   margin-top: 25px;
@@ -155,7 +147,6 @@ nav a:hover {
   outline: none;
 }
 
-/* EMPTY STATE */
 
 .empty-state {
   min-height: 360px;
@@ -206,8 +197,6 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* RESPONSIVO */
-
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -233,4 +222,133 @@ nav a:hover {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+.form-page {
+  min-height: calc(100vh - 90px);
+  padding: 70px 10%;
+  background: linear-gradient(135deg, #ffffff, #f4faf1, #e7f5df);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-anuncio {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 24px;
+  border: 1px solid rgba(35, 119, 2, 0.2);
+  box-shadow: 0 25px 60px rgba(35, 119, 2, 0.16);
+}
+
+.form-anuncio h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #237702;
+  margin-bottom: 30px;
+}
+
+.form-anuncio input,
+.form-anuncio textarea,
+.form-anuncio select {
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #cfe3c8;
+  border-radius: 12px;
+  background: #fbfdf9;
+  color: #111;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-anuncio textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-anuncio input:focus,
+.form-anuncio textarea:focus,
+.form-anuncio select:focus {
+  border-color: #237702;
+  box-shadow: 0 0 0 3px rgba(35, 119, 2, 0.12);
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+.form-anuncio button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 10px;
+  background: #237702;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-anuncio button:hover {
+  background: #1b5c02;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(35, 119, 2, 0.3);
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-anuncio {
+    padding: 30px 22px;
+  }
+}
+
+.upload-area {
+  margin-bottom: 20px;
+}
+
+.upload-area label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #237702;
+}
+
+.upload-area input {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed #237702;
+  border-radius: 10px;
+  background: #f6fbf3;
+  cursor: pointer;
+}
+
+#preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.preview-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #237702;
+}
+
+#contador-imagens {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
 }
