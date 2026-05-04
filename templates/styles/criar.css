@@ -71,6 +71,69 @@ nav a:hover {
   color: var(--text);
 }
 
+
+
+/* ===== CARACTERÍSTICAS EM LINHA / CHIPS ===== */
+
+/* ===== CARACTERÍSTICAS EM LINHA ===== */
+
+.caracteristicas {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg-soft);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.caracteristicas h4 {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.caracteristicas label {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 18px;
+
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s;
+
+  line-height: 1;
+}
+
+.caracteristicas label:hover {
+  border-color: var(--green);
+  color: var(--green-dark);
+}
+
+.caracteristicas input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--green);
+  flex-shrink: 0;
+}
+
 /* ===== PÁGINA DO FORM ===== */
 
 .form-page {
