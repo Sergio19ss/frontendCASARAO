@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar chat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversas - CASARÃO</title>
+  <link rel="stylesheet" href="styles/conversas.css">
 </head>
+
 <body>
-    
+
+  <header class="top-header">
+    <a href="main.html" class="logo">
+      <h1>CASARÃO</h1>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="anuncios.html">Anúncios</a></li>
+        <li><a href="conversas.html" class="active-link">Conversas</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="login.html" class="logout-link">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="chat-page">
+
+    <!-- SIDEBAR -->
+    <aside class="chat-sidebar">
+      <div class="sidebar-header">
+        <h2>Mensagens</h2>
+      </div>
+
+      <div class="conversation-list">
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 1</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=22" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 2</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=30" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 3</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item active">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=15" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 4</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=45" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 5</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=49" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 6</h4>
+            <p>Ausente</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=8" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 7</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+        <a href="#" class="conversation-item">
+          <div class="avatar-wrap">
+            <img src="https://i.pravatar.cc/100?img=56" alt="Utilizador">
+            <span class="status offline"></span>
+          </div>
+          <div class="conversation-info">
+            <h4>Utilizador 8</h4>
+            <p>Offline</p>
+          </div>
+        </a>
+
+      </div>
+    </aside>
+
+    <!-- ÁREA DO CHAT -->
+    <section class="chat-panel">
+
+      <div class="chat-header">
+        <div class="chat-user">
+          <div class="avatar-wrap big">
+            <img src="https://i.pravatar.cc/100?img=15" alt="Utilizador 4">
+            <span class="status offline"></span>
+          </div>
+
+          <div class="chat-user-info">
+            <h3>Utilizador 4</h3>
+            <p>Offline</p>
+          </div>
+        </div>
+
+        <div class="chat-header-actions">
+          <button>Ver perfil</button>
+        </div>
+      </div>
+
+      <div class="chat-messages">
+
+        <div class="message-row received">
+          <div class="mini-avatar">
+            <img src="https://i.pravatar.cc/100?img=15" alt="Utilizador 4">
+          </div>
+          <div class="message-content">
+            <div class="message-bubble">
+              mas isso é uma cerimónia doa
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row received">
+          <div class="mini-avatar">
+            <img src="https://i.pravatar.cc/100?img=15" alt="Utilizador 4">
+          </div>
+          <div class="message-content">
+            <div class="message-bubble">
+              doq
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row sent">
+          <div class="message-content">
+            <div class="message-bubble">
+              Era o baile de finalistas
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row received">
+          <div class="mini-avatar">
+            <img src="https://i.pravatar.cc/100?img=15" alt="bara">
+          </div>
+          <div class="message-content">
+            <div class="message-bubble">
+              ahhh assim faz mais sentido 😅
+            </div>
+          </div>
+        </div>
+
+        <div class="message-row sent">
+          <div class="message-content">
+            <div class="message-bubble">
+              yaa, também expliquei mal no início
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="chat-input-area">
+        <input type="text" placeholder="Escreve uma mensagem...">
+        <button type="submit">Enviar</button>
+      </form>
+
+    </section>
+
+  </main>
+
 </body>
 </html>

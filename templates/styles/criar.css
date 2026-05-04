@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #28b446;
+  --green-dark: #1f9438;
+  --green-soft: #eaf8ee;
+  --text: #111;
+  --muted: #666;
+  --border: #e8e8e8;
+  --bg-soft: #f8f8f8;
+  --shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+
+.top-header {
+  width: 100%;
+  height: 78px;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--green-dark);
+}
+
+.logout-link {
+  color: var(--text);
+}
+
+/* ===== PÁGINA DO FORM ===== */
+
+.form-page {
+  min-height: calc(100vh - 78px);
+  padding: 55px 7%;
+  background:
+    radial-gradient(circle at top left, rgba(40, 180, 70, 0.12), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(40, 180, 70, 0.10), transparent 28%),
+    #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-anuncio {
+  width: 100%;
+  max-width: 920px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 34px;
+  padding: 42px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-anuncio::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border: 4px solid var(--green);
+  border-radius: 50%;
+  top: -210px;
+  right: -120px;
+  opacity: 0.35;
+}
+
+.form-anuncio h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+  color: var(--text);
+  position: relative;
+  z-index: 1;
+}
+
+.form-anuncio h2::after {
+  content: "";
+  display: block;
+  width: 82px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 999px;
+  margin-top: 12px;
+}
+
+/* ===== CAMPOS ===== */
+
+.form-anuncio input,
+.form-anuncio textarea,
+.form-anuncio select {
+  width: 100%;
+  border: 2px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text);
+  border-radius: 18px;
+  padding: 16px 18px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: 0.25s;
+  margin-bottom: 16px;
+}
+
+.form-anuncio textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.form-anuncio input::placeholder,
+.form-anuncio textarea::placeholder {
+  color: #888;
+}
+
+.form-anuncio input:focus,
+.form-anuncio textarea:focus,
+.form-anuncio select:focus {
+  background: #fff;
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(40, 180, 70, 0.12);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ===== UPLOAD ===== */
+
+.upload-area {
+  margin-top: 8px;
+  margin-bottom: 22px;
+  border: 2px dashed var(--green);
+  border-radius: 24px;
+  background: var(--green-soft);
+  padding: 28px;
+  text-align: center;
+  position: relative;
+  transition: 0.25s;
+}
+
+.upload-area:hover {
+  background: #f3fbf5;
+  transform: translateY(-2px);
+}
+
+.upload-area label {
+  display: inline-block;
+  background: #fff;
+  color: var(--green-dark);
+  border: 2px solid var(--green);
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.upload-area label:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.upload-area p {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+#preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* caso depois cries previews por JS */
+#preview img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BOTÃO SUBMIT ===== */
+
+.form-anuncio button[type="submit"] {
+  width: 100%;
+  border: none;
+  background: var(--green);
+  color: #fff;
+  padding: 18px 26px;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-anuncio button[type="submit"]:hover {
+  background: var(--green-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(40, 180, 70, 0.28);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 850px) {
+  .top-header {
+    height: auto;
+    padding: 20px 5%;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .form-page {
+    padding: 38px 5%;
+  }
+
+  .form-anuncio {
+    padding: 30px 24px;
+    border-radius: 26px;
+  }
+
+  .form-anuncio h2 {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-page {
+    padding: 28px 4%;
+  }
+
+  .form-anuncio {
+    padding: 24px 18px;
+  }
+
+  .form-anuncio h2 {
+    font-size: 1.8rem;
+  }
+
+  .upload-area {
+    padding: 24px 16px;
+  }
+}

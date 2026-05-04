@@ -1,12 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASARÃO - Anúncios</title>
+  <link rel="stylesheet" href="styles/anuncios.css">
 </head>
+
 <body>
-    
+
+  <header class="top-header">
+    <a href="main.html" class="logo">
+      <h1>CASARÃO</h1>
+    </a>
+        <nav>
+            <ul>
+                <li><a href="anuncios.html" class="active">Anúncios</a></li>
+                <li><a href="conversas.html">Conversas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="login.html" class="logout-link">Sair</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="page-heading">
+        <div>
+            <h2>Casas e apartamentos disponíveis <span>(1476)</span></h2>
+            <p>Pesquisa imóveis por localização, tipo, quartos e modalidade.</p>
+        </div>
+
+        <div class="page-options">
+            <button>Ocultar filtros</button>
+            <button>Ordenar por ˅</button>
+            <a href="criaranuncio.html" class="create-link">Criar anúncio</a>
+        </div>
+    </section>
+
+    <section class="search-bar">
+
+      <div class="search-field">
+        <label for="tipo">Tipo de casa</label>
+        <select id="tipo" name="tipo">
+          <option value="">Qualquer tipo</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="moradia">Moradia</option>
+          <option value="casa">Casa</option>
+          <option value="quarto">Quarto</option>
+          <option value="terreno">Terreno</option>
+        </select>
+      </div>
+
+      <div class="search-field">
+        <label for="localidade">Localidade</label>
+        <input type="text" id="localidade" name="localidade" placeholder="Lisboa, Porto, Braga...">
+      </div>
+
+      <div class="search-field">
+        <label for="negocio">Negócio</label>
+        <select id="negocio" name="negocio">
+          <option value="">Venda ou aluguer</option>
+          <option value="venda">Venda</option>
+          <option value="aluguer">Aluguer</option>
+        </select>
+      </div>
+
+      <div class="search-field">
+        <label for="quartos">Quartos</label>
+        <select id="quartos" name="quartos">
+          <option value="">Qualquer</option>
+          <option value="1">T1</option>
+          <option value="2">T2</option>
+          <option value="3">T3</option>
+          <option value="4">T4+</option>
+        </select>
+      </div>
+
+      <button class="search-btn" type="submit">Pesquisar</button>
+
+    </section>
+
+    <section class="content-layout">
+
+      <aside class="filters">
+
+        <div class="filter-category main-categories">
+          <a href="#">Apartamentos</a>
+          <a href="#">Moradias</a>
+          <a href="#">Quartos</a>
+          <a href="#">Terrenos</a>
+          <a href="#">Escritórios</a>
+          <a href="#">Lojas</a>
+          <a href="#">Garagens</a>
+          <a href="#">Casas de férias</a>
+        </div>
+
+        <div class="filter-box">
+          <h4>Tipo de negócio</h4>
+          <label><input type="checkbox"> Venda</label>
+          <label><input type="checkbox"> Aluguer</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Comprar por preço</h4>
+          <label><input type="checkbox"> Até 500 €</label>
+          <label><input type="checkbox"> 500 € - 1000 €</label>
+          <label><input type="checkbox"> 1000 € - 2000 €</label>
+          <label><input type="checkbox"> Mais de 2000 €</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Quartos</h4>
+          <label><input type="checkbox"> T1</label>
+          <label><input type="checkbox"> T2</label>
+          <label><input type="checkbox"> T3</label>
+          <label><input type="checkbox"> T4+</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Localidade</h4>
+          <label><input type="checkbox"> Lisboa</label>
+          <label><input type="checkbox"> Porto</label>
+          <label><input type="checkbox"> Braga</label>
+          <label><input type="checkbox"> Setúbal</label>
+          <label><input type="checkbox"> Faro</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Características</h4>
+          <label><input type="checkbox"> Garagem</label>
+          <label><input type="checkbox"> Varanda</label>
+          <label><input type="checkbox"> Jardim</label>
+          <label><input type="checkbox"> Piscina</label>
+          <label><input type="checkbox"> Mobilado</label>
+        </div>
+
+      </aside>
+
+      <section class="cards-container">
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Novidade</span>
+            <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="Apartamento moderno">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Apartamento</p>
+            <h3>T2 moderno no centro da cidade</h3>
+            <p class="description">Apartamento renovado, com varanda, garagem e excelente localização.</p>
+
+            <div class="details">
+              <span>2 quartos</span>
+              <span>85 m²</span>
+              <span>Lisboa</span>
+            </div>
+
+            <p class="price">950 € / mês</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Destaque</span>
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Moradia com jardim">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Moradia</p>
+            <h3>Moradia T3 com jardim privado</h3>
+            <p class="description">Casa espaçosa com jardim, zona calma e boa exposição solar.</p>
+
+            <div class="details">
+              <span>3 quartos</span>
+              <span>140 m²</span>
+              <span>Porto</span>
+            </div>
+
+            <p class="price">1 350 € / mês</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Boa oportunidade</span>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Casa familiar">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Casa</p>
+            <h3>Casa familiar perto de escolas</h3>
+            <p class="description">Ideal para famílias, perto de transportes, escolas e supermercados.</p>
+
+            <div class="details">
+              <span>4 quartos</span>
+              <span>180 m²</span>
+              <span>Braga</span>
+            </div>
+
+            <p class="price">1 600 € / mês</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Venda</span>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Apartamento de luxo">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Apartamento</p>
+            <h3>T3 com vista para o rio</h3>
+            <p class="description">Imóvel moderno com acabamentos premium e excelente luminosidade.</p>
+
+            <div class="details">
+              <span>3 quartos</span>
+              <span>120 m²</span>
+              <span>Lisboa</span>
+            </div>
+
+            <p class="price">420 000 €</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Aluguer</span>
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Sala moderna">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Estúdio</p>
+            <h3>Estúdio mobilado junto à universidade</h3>
+            <p class="description">Perfeito para estudantes, com internet incluída e transportes próximos.</p>
+
+            <div class="details">
+              <span>1 quarto</span>
+              <span>45 m²</span>
+              <span>Coimbra</span>
+            </div>
+
+            <p class="price">620 € / mês</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="image-box">
+            <span class="badge">Exclusivo</span>
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" alt="Moradia moderna">
+          </div>
+
+          <div class="card-info">
+            <div class="dots">
+              <span></span>
+              <span></span>
+            </div>
+
+            <p class="label">Moradia</p>
+            <h3>Moradia T4 com piscina</h3>
+            <p class="description">Moradia contemporânea com piscina, garagem e zona exterior ampla.</p>
+
+            <div class="details">
+              <span>4 quartos</span>
+              <span>230 m²</span>
+              <span>Faro</span>
+            </div>
+
+            <p class="price">735 000 €</p>
+          </div>
+        </article>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CASARÃO. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
