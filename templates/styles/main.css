@@ -47,6 +47,7 @@ nav ul {
 }
 
 nav a {
+  position: relative;
   color: #111;
   text-decoration: none;
   font-weight: 700;
@@ -54,12 +55,7 @@ nav a {
   transition: 0.2s;
 }
 
-nav a:hover {
-  color: #237702;
-}
-nav a:hover {
-  color: #237702;
-}
+nav a:hover,
 nav a.active {
   color: #237702;
 }
@@ -70,7 +66,8 @@ nav a.active::after {
   height: 3px;
   left: 0;
   right: 0;
-  bottom: -17px;
+  bottom: -28px;
+  background: #237702;
   border-radius: 999px;
 }
 
