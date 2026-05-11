@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Perfil - CASARÃO</title>
+  <link rel="stylesheet" href="styles/settings.css">
+</head>
+
+<body>
+
+<header class="top-header">
+  <a href="main.html" class="logo">
+    <h1>CASARÃO</h1>
+  </a>
+
+  <nav>
+    <ul>
+      <li><a href="anuncios.html">Anúncios</a></li>
+      <li><a href="conversas.html">Conversas</a></li>
+      <li><a href="perfil.html" class="active">Perfil</a></li>
+      <li><a href="login.html">Sair</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="settings-page">
+
+  <section class="settings-card">
+
+    <div class="settings-header">
+      <div>
+        <p class="small-title">PERFIL</p>
+        <h2>Editar Perfil</h2>
+        <p class="subtitle">
+          Atualiza as tuas informações pessoais e imagem de perfil.
+        </p>
+      </div>
+
+      <div class="profile-preview">
+        <img src="styles/img/CASA.jpg" alt="Foto perfil">
+      </div>
+    </div>
+
+    <form class="settings-form">
+
+      <div class="upload-section">
+        <label for="foto" class="upload-box">
+          <img src="styles/img/CASA.jpg" alt="Preview">
+          <span>Alterar foto</span>
+        </label>
+
+        <input type="file" id="foto">
+      </div>
+
+      <div class="form-grid">
+
+        <div class="input-group">
+          <label>Nome de utilizador</label>
+          <input type="text" value="Talibooo">
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" value="talibooo@email.com">
+        </div>
+
+        <div class="input-group">
+          <label>Localização</label>
+          <input type="text" value="Lisboa">
+        </div>
+
+        <div class="input-group">
+          <label>Telefone</label>
+          <input type="text" value="+351 912 345 678">
+        </div>
+
+      </div>
+
+      <div class="input-group full">
+        <label>Biografia</label>
+
+        <textarea placeholder="Fala um pouco sobre ti...">
+Apaixonado por imobiliário e investimentos.
+        </textarea>
+      </div>
+
+      <div class="stats-box">
+
+        <div class="stat-card">
+          <strong>12</strong>
+          <span>Anúncios publicados</span>
+        </div>
+
+        <div class="stat-card">
+          <strong>84</strong>
+          <span>Mensagens</span>
+        </div>
+
+        <div class="stat-card">
+          <strong>1 ano</strong>
+          <span>Membro desde</span>
+        </div>
+
+      </div>
+
+      <div class="settings-actions">
+        <a href="perfil.html" class="cancel-btn">
+          Cancelar
+        </a>
+
+        <button type="submit" class="save-btn">
+          Guardar alterações
+        </button>
+      </div>
+
+    </form>
+
+  </section>
+
+</main>
+
+</body>
+</html>

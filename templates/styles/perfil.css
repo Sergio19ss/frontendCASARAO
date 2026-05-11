@@ -145,7 +145,7 @@ nav a.active::after {
 }
 
 .perfil-info span {
-  margin-left: 16px;
+  margin-left:1px;
   color: #237702;
   font-weight: 800;
 }
@@ -435,4 +435,139 @@ nav a.active::after {
     width: 100%;
     max-width: 260px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px 24px;
+}
+
+.card {
+  background: #fff;
+  cursor: pointer;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.35s ease;
+}
+
+.card:hover .image-box img {
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #fff;
+  color: #237702;
+  padding: 9px 15px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 900;
+  z-index: 2;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.card-info {
+  padding-top: 12px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.dots span {
+  width: 15px;
+  height: 15px;
+  background: #237702;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.dots span:nth-child(2) {
+  background: #f1f1f1;
+}
+
+.label {
+  color: #e43d12;
+  font-weight: 900;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.card-info h3 {
+  font-size: 1.05rem;
+  line-height: 1.25;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.description {
+  color: #707072;
+  font-size: 0.96rem;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.details span {
+  background: #eef8e9;
+  color: #237702;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.details-btn {
+  background: #237702;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #111;
 }
